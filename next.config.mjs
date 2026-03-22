@@ -6,13 +6,9 @@ const nextConfig = {
     unoptimized: true,
   },
   typescript: {
-    // This stops the "Failed to type check" error from crashing the build
     ignoreBuildErrors: true,
   },
-  eslint: {
-    // This prevents linting warnings from stopping the build
-    ignoreDuringBuilds: true,
-  },
+  // Removed the 'eslint' block that caused the warning
 };
 
 export default nextConfig;
